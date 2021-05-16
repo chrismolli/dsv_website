@@ -64,7 +64,7 @@ html { font-size: 16px; }
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure { margin: 0; padding: 0; }
 
 /** Basic styling */
-body { font: 400 16px/1.5 "Arvo", sans-serif; color: #111111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; overflow-wrap: break-word; }
+body { font: 400 16px/1.5 "Karla", sans-serif; color: #111111; background-color: #fdfdfd; -webkit-text-size-adjust: 100%; -webkit-font-feature-settings: "kern" 1; -moz-font-feature-settings: "kern" 1; -o-font-feature-settings: "kern" 1; font-feature-settings: "kern" 1; font-kerning: normal; display: flex; min-height: 100vh; flex-direction: column; overflow-wrap: break-word; }
 
 /** Set `margin-bottom` to maintain vertical rhythm */
 h1, h2, h3, h4, h5, h6, p, blockquote, pre, ul, ol, dl, figure, .highlight { margin-bottom: 15px; }
@@ -229,10 +229,24 @@ table td { border: 1px solid #e8e8e8; }
 @media screen and (min-width: 800px) { .one-half { width: calc(50% - (30px / 2)); } }
 .logo { padding-top: 1em; padding-bottom: 1em; width: 250px; }
 
-.site-title, .site-nav { padding-top: 20px; padding-bottom: 20px; }
+.site-title { padding-top: 20px; padding-bottom: 20px; }
+
+.site-nav { padding-top: 70px; }
+
+@keyframes topbar { 0% { border-color: #1ace6b; }
+  25% { border-color: #ffd300; }
+  50% { border-color: #be0aff; }
+  100% { border-color: #1ace6b; } }
+.site-header { border-top: 5px solid #1ace6b; animation-name: topbar; animation-duration: 15s; animation-direction: alternate; animation-iteration-count: infinite; }
+
+.site-logo { width: 100px; margin-left: 0px; padding: 10px; }
 
 #page-hero { margin-left: 0; margin-bottom: 30px; width: 100vw; height: 600px; background-position: center; background-repeat: no-repeat; background-size: cover; }
 
-@media (max-width: 400px) { .logo { width: 180px; }
+@media (max-width: 420px) { .logo { width: 180px; }
   .site-title { padding-top: 0px; padding-bottom: 0px; }
-  #page-hero { margin-bottom: 15px; height: 350px; } }
+  #page-hero { margin-bottom: 15px; height: 350px; }
+  .site-logo { padding: 20px; }
+  #site-title-span { display: none; }
+  .site-nav { border: 0; }
+  .post-title { text-align: center; } }
