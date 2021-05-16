@@ -12,19 +12,15 @@
   padding-bottom: 20px;
 }
 
-#site-title-span{
-  // color:;
-}
-
 .site-nav{
-  padding-top: 70px;
+  padding-top: 0px;
 }
 
 @keyframes topbar {
-  0%   {border-color: #1ace6b;}
-  25%  {border-color: #ffd300;}
-  50%  {border-color: #be0aff;}
-  100% {border-color: #1ace6b;}
+  0%   {border-top-color: #1ace6b;}
+  25%  {border-top-color: #ffd300;}
+  50%  {border-top-color: #be0aff;}
+  100% {border-top-color: #1ace6b;}
 }
 
 .site-header{
@@ -51,26 +47,38 @@
   background-size: cover;
 }
 
+@media (max-width: 600px){
+  .site-nav{
+    top: 37px;
+    border: 0;
+  }
+}
+
 @media (max-width: 420px){
   .logo{
     width: 180px;
   }
+
   .site-title{
     padding-top: 0px;
     padding-bottom: 0px;
   }
+
   #page-hero{
     margin-bottom: 15px;
     height: 350px;
   }
+
   .site-logo{
     padding: 20px;
   }
+
   #site-title-span{
     display: none;
   }
 
   .site-nav{
+    top: 27px;
     border: 0;
   }
 
