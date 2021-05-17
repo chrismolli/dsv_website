@@ -5,7 +5,7 @@ permalink: /vereine/
 ---
 
 <p>
-  TODO
+  Die Mitgliedsvereine des deutschen Slackline Verbandes.
 </p>
 
 <hr style = "width:30%;margin-left:auto;margin-right:auto;">
